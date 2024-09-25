@@ -12,8 +12,10 @@ import AgencyTemplatePage from './admindashboard/pages/agencytemplatepage';
 import PersonalProjectsPage from './admindashboard/pages/personalprojectspage';
 import PersonalSingleProject from './admindashboard/pages/personalsingleproject';
 import PersonalTemplatePage from './admindashboard/pages/personaltemplatepage';
+import NotFoundPage from './admindashboard/pages/notFoundPage';
 
 import "./App.css"
+
 
 
 
@@ -25,6 +27,7 @@ function App() {
 
   const router = createBrowserRouter([
     {path: '/',element: <LoginPage />},
+    {path: '*',element: <NotFoundPage />},
     {
       path: '/dashboard',
       element: <AdminDashboard />,
